@@ -113,3 +113,45 @@ body {
 .hide {
     display: none;
 }
+
+@media only screen and (max-width: 320px) {
+    .container {
+        width: 80vw;
+        min-height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .container {
+        width: 80vw;
+        min-height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .container {
+        width: 80vw;
+        min-height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80vw;
+        min-height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 70vw;
+        min-height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 30vw;
+        min-height: 80vh;
+    }
+}
