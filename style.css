@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    min-height: 80vh;
+    width: 38vw;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quiz {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.btn {
+    background: linear-gradient(to right, #14163c 0%, #03217b 79%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    scale: 1.1;
+    border-color: black;
+}
+
+.btn:disabled:hover {
+    scale: 1;
+    border-color: transparent;
+    cursor: default;
+}
+
+.btn.correct {
+    background: green;
+}
+
+.btn.wrong {
+    background: crimson;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+}
+
+.result.correct {
+    color: darkgreen;
+    border-color: green;
+}
+
+.result.wrong {
+    color: crimson;
+    border-color: crimson;
+}
+
+.start,
+.next {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 0 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
